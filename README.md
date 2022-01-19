@@ -132,6 +132,21 @@ GET / HTTP/1.1 http://localhost:5000/user/detail?id=10000
 
 ```
 ## 数据返回
+```
+//弱类型返回
+public object Get(){
+    //自定义其他重载
+    return Success();//默认执行成功,不返回任何数据
+    return Success(new {name="孙悟空"});//带数据返回
+    return Error();
+    return Error("账户名密码错误");
+}
+//强类型返回
+public Account Get(){
+    return new Account(){Name="孙悟空"};
+}
+```
+### 默认格式
 ```json
 {
     "s": true,//执行状态
