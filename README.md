@@ -161,4 +161,18 @@ fetch("http://10.0.0.151:5000", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
-
+## 返回数据格式 (可配置自定义格式)
+```json
+{
+    "s": true,
+    "c": 200,
+    "m": "ok",
+    "d": {
+        "ID": "99ead98b666549b590a529f453336e41",
+        "No": 7364,
+        "Name": "N9189",
+        "Phone": "+861642609352",
+        "CreateTime": "2022-01-20T00:22:32.5188842+08:00"
+    }
+}
+```
