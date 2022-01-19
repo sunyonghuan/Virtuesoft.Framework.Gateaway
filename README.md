@@ -1,5 +1,13 @@
 # Virtuesoft.Framework.Gateaway
-简单的接口框架,升级到.NET6
+高性能,轻量级,简单的接口框架,升级到.NET6.自主研发,生产环境已经从2018年使用至今,迭代了无数个版本,曾经战绩抗住每日上亿交易额,几十万用户,抗住过高并发(最头疼的问题),早先版本做过开源,但是涉及到其他插件并未解耦,所以不全,现在提出来单独开源.欢迎讨论.
+## 功能简介
+```
+支持 授权认证 token,自带JWT,支持自主加密算法
+支持IP 黑白名单
+支持与aspnetcore 组合使用,曾经用在winform 和windows service上
+可组合 翻译插件 缓存插件 单件登录 自定义日志 等
+建议EF和dapper组合使用,曾经在高并发下发现过EF的问题,最后组合DAPPER后提升不少,这是血的教训
+```
 ## 安装包
 ```PM
 Install-Package Virtuesoft.Framework.Gateaway -Version 6.0.1
