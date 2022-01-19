@@ -1,5 +1,11 @@
 # Virtuesoft.Framework.Gateaway
 简单的接口框架,升级到.NET6
+## 安装包
+```PM
+Install-Package Virtuesoft.Framework.Gateaway -Version 6.0.1
+或者
+dotnet add package Virtuesoft.Framework.Gateaway --version 6.0.1
+```
 ## 使用配置
 ```C#
 var builder = WebApplication.CreateBuilder(args);
@@ -7,7 +13,9 @@ var sqlConnectionString = builder.Configuration.GetConnectionString("DbContext")
 builder
     .Logging
     .AddConsole()
-    //配置数据库日志记录
+    //配置数据库日志记录(可选项)
+    //需要安装日志插件
+    //Install-Package Virtuesoft.Framework.Logging.SqlServer -Version 5.0.1
     .AddSqlServer(option => {
         option.ConnectionString= sqlConnectionString;
     })
