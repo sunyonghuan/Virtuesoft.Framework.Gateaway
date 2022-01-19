@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>Virtuesoft.Framework.Gateaway</AssemblyName>
+    <RootNamespace>Virtuesoft.Framework.Gateaway</RootNamespace>
+    <Version>6.0.1</Version>
+    <Authors>sunyonghuan@virtuesoft.cn</Authors>
+    <Company>布德软件科技</Company>
+    <Description>适用于netcore 6.x的框架</Description>
+    <Copyright>布德软件科技</Copyright>
+    <PackageProjectUrl>https://www.virtuesoft.cn/</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageTags>gateaway</PackageTags>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="C:\Users\sunyonghuan.A\.nuget\packages\virtuesoft.framework.jsonextensions\1.0.1\contentFiles\any\netstandard2.0\Extensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="5.0.0" />
+    <PackageReference Include="Virtuesoft.Framework.EncryptExtensions" Version="1.0.4" />
+    <PackageReference Include="Virtuesoft.Framework.EnumExtensons" Version="1.0.1" />
+    <PackageReference Include="Virtuesoft.Framework.JsonExtensions" Version="1.0.1" />
+    <PackageReference Include="Virtuesoft.Framework.StringExtensions" Version="1.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="D:\工作文档\厦门布德软件科技有限公司\VI\logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
